@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Gitfs Time ago Converter",
+  "description": "This extension adds real time beside Gitfs time ago",
+  "version": "1.1",
+  "permissions": ["tabs", "*://*.github.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/*"],
+      "js": ["thirdParty/jquery.min.js","thirdParty/moment.min.js","script.js"]
+    }
+  ]
+}
